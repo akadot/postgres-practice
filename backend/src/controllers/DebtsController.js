@@ -1,6 +1,12 @@
 const Debts = require("../models/Debits");
 
 module.exports = {
+  async index(req, res) {
+    const debts = await Debts.findAll();
+
+    return res.json(debts);
+  },
+
   async store(req, res) {
     const { name, value, description, end_date, notify_hour } = req.body;
 
