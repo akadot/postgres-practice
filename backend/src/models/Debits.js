@@ -9,6 +9,7 @@ class Debts extends Model {
         description: DataTypes.TEXT,
         end_date: DataTypes.DATEONLY,
         notify_hour: DataTypes.TIME,
+        color: DataTypes.STRING,
       },
       {
         sequelize: connection,

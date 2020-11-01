@@ -29,6 +29,10 @@ module.exports = {
         type: Sequelize.TIME,
         allowNull: false,
       },
+      color: {
+        type: Sequelize.STRING,
+        allowNull: false,
+      },
       created_at: {
         type: Sequelize.DATE,
         allowNull: false,
