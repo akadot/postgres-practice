@@ -25,8 +25,6 @@ module.exports = {
   async edit(req, res) {
     const { id } = req.params;
     const newData = req.body;
-    const oldData = await Debts;
-    console.log(oldData);
 
     const debt_id = await Debts.findByPk(id);
 
